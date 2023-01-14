@@ -18,14 +18,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Install / Enable IIS (Internet Information Services)
-- Install Web Platform Installer
+- Install PHP Manager for IIS
+- Install Rewrite Module
+- Install PHP 7.3.8
+- Install VC_redlist
+- Install MySQL
+- Register PHP
 - Install osTicket
 - Install HeidiSQL
 
 <h2>Installation Steps</h2>
 ! ATTENTION !
 
-Before you begin, make sure you are using a virtual machine in Azure. If you don't know how to create an Azure account or a virtual machine in Azure, please refer to my tutorial [here]
+Before we begin, if you haven't already created an Azure Account or dont know how to launch a Virtual Machine in Azure, please refer to my [tutorial](https://github.com/auryreyes/create-azure-virtual-machine).
 
 <h3>Install / Enable IIS (Internet Information Services)</h3>
 
