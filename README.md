@@ -97,6 +97,7 @@ To get started, download and install [Rewrite Module](https://drive.google.com/f
 
 Open after downloading to install
 - File Explorer -> Downloads -> rewrite_amd64_en-US
+- Create the directory C:\PHP
 
 <p>
 <img src="https://i.imgur.com/8iMweJQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -108,5 +109,131 @@ Open after downloading to install
 <img src="https://i.imgur.com/Ikq4Ug0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.imgur.com/H0wg0LB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/UyZknhw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/g4E9Lfz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/ad7RWmP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 4. Install PHP 7.3.8</h3>
+
+To get started, download [PHP 7.3.8](https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=share_link) (php-7.3.8-nts-Win32-VC15-x86.zip) 
+- Extract file into C:\PHP
+
+<p>
+<img src="https://i.imgur.com/pb8pgaX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/8yuqunq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/nMs2Drq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 5. Install VC_redlist</h3>
+
+To get started, download and install [VC_redlist.x86.exe](https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view?usp=share_link)
+
+Open after downloading to install
+- File Explorer -> Downloads -> VC_redlist.x86
+
+<p>
+<img src="https://i.imgur.com/SLOnkDi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/L1ngDDA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Rzy6g27.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/r8yPEtb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 6. Install MySQL</h3>
+
+MySQL Server is a database for osTicket. To get started, download and install [MySQL 5.5.62](https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=share_link) (mysql-5.5.62-win32.msi)
+
+Open after downloading to install
+- File Explorer -> Downloads -> mysql-5.5.62-win32
+- Typical Setup
+- Launch Configuration Wizard (after install)
+- Standard Configuration
+- Password1
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 7. Register PHP</h3>
+
+Register PHP from within IIS
+- Open IIS as an Admin
+- PHP Manager -> Register new PHP version
+- Browse and select C:\PHP\php-cgi.exe
+- Reload IIS (Open IIS, Restart server)
+
+<h3>Step 8. Install osTicket</h3>
+
+To get started, download [osTicket v1.15.8](https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) (osTicket-v1.15.8.zip)
+
+After downloading
+- Extract and copy “upload” folder to c:\inetpub\wwwroot
+- Within c:\inetpub\wwwroot, Rename “upload“ to “osTicket”
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Reload IIS (Open IIS, Restart server)
+
+On the left hand side click on the drop down then:
+- Go to sites -> Default -> osTicket
+- On the right, click “Browse *:80(http)”
+
+<h3>Step 9. Install HeidiSQL</h3>
+
+To get started, download and install [HeidiSQL 9](https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit) (HeidiSQL_12.3.0.6589_Setup)
+
+Open after downloading to install
+- File Explorer -> Downloads -> File Explorer -> Downloads -> HeidiSQL_12.3.0.6589_Setup.exe
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
