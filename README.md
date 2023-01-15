@@ -70,3 +70,43 @@ Install / Enable IIS (Internet Information Services)
 <p>
 <img src="https://i.imgur.com/dmJW5v2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h3>Step 2. Install PHP Manager for IIS</h3>
+
+To get started, download and install [PHP Manager for IIS](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=share_link) (PHPManagerForIIS_V1.5.0.msi)
+
+Open after downloading to install
+- File Explorer -> Downloads -> PHPManagerForIIS_V1.5.0
+
+<p>
+<img src="https://i.imgur.com/UpKeqsi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DU2vNzU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/iDuyxre.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/GwSYRQ5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h3>Step 3. Install Install Rewrite Module</h3>
+
+To get started, download and install [Rewrite Module](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share_link) (rewrite_amd64_en-US.msi)
+
+Open after downloading to install
+- File Explorer -> Downloads -> rewrite_amd64_en-US
+
+<p>
+<img src="https://i.imgur.com/8iMweJQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/qeDGv4R.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Ikq4Ug0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/H0wg0LB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
