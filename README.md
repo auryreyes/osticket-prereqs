@@ -94,15 +94,10 @@ Open after downloading to install
 <h3>Step 3. Install Install Rewrite Module</h3>
 
 To get started, download and install [Rewrite Module](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=share_link) (rewrite_amd64_en-US.msi)
-
-Open after downloading to install
 - Create the directory C:\PHP
 
 <p>
 <img src="https://i.imgur.com/8iMweJQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-<img src="https://i.imgur.com/Ikq4Ug0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <img src="https://i.imgur.com/UyZknhw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -126,14 +121,12 @@ To get started, download [PHP 7.3.8](https://drive.google.com/file/d/1snNMtLdCOp
 <img src="https://i.imgur.com/8yuqunq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.imgur.com/nMs2Drq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4aS1cYb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <h3>Step 5. Install VC_redlist</h3>
 
 To get started, download and install [VC_redlist.x86.exe](https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view?usp=share_link)
-
-Open after downloading to install
 
 <p>
 <img src="https://i.imgur.com/SLOnkDi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -203,7 +196,7 @@ Register PHP from within IIS
 To get started, download [osTicket v1.15.8](https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) (osTicket-v1.15.8.zip)
 
 After downloading
-- Extract and copy “upload” folder to c:\inetpub\wwwroot
+- Copy “upload” folder to c:\inetpub\wwwroot
 - Within c:\inetpub\wwwroot, Rename “upload“ to “osTicket”
 
 <p>
@@ -237,7 +230,7 @@ After clicking, a web browser should open to the osTicket page.
 <img src="https://i.imgur.com/UzLimtr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-There are some extensions that are not enabled:
+**There are some extensions that are not enabled:**
 - Go back to IIS, sites -> Default -> osTicket
 - Double-click PHP Manager
 - Click “Enable or disable an extension”
@@ -262,17 +255,16 @@ There are some extensions that are not enabled:
 <img src="https://i.imgur.com/TvHrJSF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Rename ost-sampleconfig.php to ost-config.php
+**Rename ost-sampleconfig.php to ost-config.php**
 
-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
-
-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+- From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+- To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 <p>
 <img src="https://i.imgur.com/LGM44MP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Assign Permissions to “os-config.php”
+**Assign Permissions to “os-config.php”**
 - Right click on "os0config.php" -> Properties
 - Security tab -> Advanced
 - Disable inheritance -> Remove all inherited permissions from this object
@@ -365,7 +357,7 @@ MySQL Database: osTicket
 <img src="https://i.imgur.com/HZJiL97.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Congratulations, and hopefully osTicket was successfully installed!
+**Congratulations, and hopefully osTicket was successfully installed!**
 - Browse to your help desk [login page](http://localhost/osTicket/scp/login.php)
 
 <h3>!ATTENTION!</h3>
@@ -377,7 +369,7 @@ There are some files that need to be deleted.
 <img src="https://i.imgur.com/eqwrcWv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-Set Permissions to “Read” only on “ost-config.php” file 
+**Set Permissions to “Read” only on “ost-config.php” file**
 
 (C:\inetpub\wwwroot\osTicket\include\ost-config.php)
 - Right click “ost-config.php” file and select “Properties”
