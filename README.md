@@ -345,7 +345,7 @@ After installation, open HeidiSQL.
 
 Continue Setting up osTicket in the browser.
 
-MySQL Database: osTicket
+**MySQL Database: osTicket**
 - MySQL Username: root
 - MySQL Password: Password1
 - Click “Install Now!”
