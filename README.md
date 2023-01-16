@@ -28,7 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install HeidiSQL
 
 <h2>Installation Steps</h2>
-! ATTENTION !
+<h3>!ATTENTION!</h3>
 
 Before we begin, if you haven't already created an Azure Account or dont know how to launch a Virtual Machine in Azure, please refer to my [tutorial](https://github.com/auryreyes/create-azure-virtual-machine).
 
@@ -225,13 +225,184 @@ On the left hand side click on the drop down then:
 - Go to sites -> Default -> osTicket
 - On the right, click “Browse *:80(http)”
 
+After clicking, a web browser should open to the osTicket page.
+
+<p>
+<img src="https://i.imgur.com/Jq51FWc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/JzfIJwR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/UzLimtr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+There are some extensions that are not enabled:
+- Go back to IIS, sites -> Default -> osTicket
+- Double-click PHP Manager
+- Click “Enable or disable an extension”
+  - Enable: php_imap.dll
+  - Enable: php_intl.dll
+  - Enable: php_opcache.dll
+- Refresh the osTicket site in your browser and observe any changes.
+
+<p>
+<img src="https://i.imgur.com/n01Uv0g.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/OsSC3jD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DNU36xI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/BVUALxV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/TvHrJSF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Rename ost-sampleconfig.php to ost-config.php
+
+From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+
+To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+<p>
+<img src="https://i.imgur.com/LGM44MP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Assign Permissions to “os-config.php”
+- Right click on "os0config.php" -> Properties
+- Security tab -> Advanced
+- Disable inheritance -> Remove all inherited permissions from this object
+- Click Add -> Select a principal
+- Type “Everyone” in the box -> Check Names -> OK
+- Check “Full Control” box -> OK
+
+<p>
+<img src="https://i.imgur.com/P9e9fv9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/6xWvITH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/XfEVzYh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/olcTfu1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/DlCGgb0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/qWnZocK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/ipnLK5p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Pxk9COC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Q6ofncI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+- Continue setting up osTicket in the browser (click Continue).
+- Fill out everything until you get to the Database Settings.
+
+<p>
+<img src="https://i.imgur.com/8V2ZrGC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/LFPUe1T.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 <h3>Step 9. Install HeidiSQL</h3>
 
 To get started, download and install [HeidiSQL 9](https://docs.google.com/document/d/1WovrX2DaS9xkfaSr4LXyB4YnnWpXIgPCMMbbfgHmGVw/edit) (HeidiSQL_12.3.0.6589_Setup)
 
-Open after downloading to install
-- File Explorer -> Downloads -> File Explorer -> Downloads -> HeidiSQL_12.3.0.6589_Setup.exe
+<p>
+<img src="https://i.imgur.com/U6ma0yU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/p4AmLho.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+After installation, open HeidiSQL.
+- On the bottom left click “New” to create a new session
+- Connect to the session
+- On the left side of the page right click “Unnamed”
+- Create new -> Database
+- Name the database “osTicket”
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wefQgCo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+<img src="https://i.imgur.com/5qJ7V2y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/B9ysz6p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/Jdfc917.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Continue Setting up osTicket in the browser.
+
+MySQL Database: osTicket
+- MySQL Username: root
+- MySQL Password: Password1
+- Click “Install Now!”
+
+<p>
+<img src="https://i.imgur.com/Oc3CH0T.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/HZJiL97.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Congratulations, and hopefully osTicket was successfully installed!
+- Browse to your help desk [login page](http://localhost/osTicket/scp/login.php)
+
+<h3>!ATTENTION!</h3>
+
+There are some files that need to be deleted.
+- Delete: C:\inetpub\wwwroot\osTicket\setup
+
+<p>
+<img src="https://i.imgur.com/eqwrcWv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Set Permissions to “Read” only on “ost-config.php” file 
+
+(C:\inetpub\wwwroot\osTicket\include\ost-config.php)
+- Right click “ost-config.php” file and select “Properties”
+- Security -> Advanced
+- Everyone -> Edit
+- Allow only:
+  - Read & Execute
+  - Read
+
+<p>
+<img src="https://i.imgur.com/y5coTkF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/0d34sao.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/tbb1HD0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/bhTI9Ws.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/40xpuMY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+Congratulations! osTicket was successfully installed! 
+
+The following two tutorials will demonstrate how to set up osTicket by adding users, administrators, and resolving and managing tickets.
